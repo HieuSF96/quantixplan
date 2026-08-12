@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantix - Kế Toán Số Thế Hệ Mới (Pitch Deck)</title>
+    <meta name="description" content="Website trình bày kế hoạch kinh doanh của Quantix - Công nghệ AI đột phá kết hợp chuyên môn thanh tra thuế chuyên sâu.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+    <!-- Background Decor Elements -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="logo-area">
+            <svg class="logo-svg" viewBox="0 0 250 65" fill="none" xmlns="http://www.w3.org/2000/svg" style="height: 38px; width: auto; display: block;">
+                <!-- Font family Outfit bold for clean replication of logo font -->
+                <text x="5" y="48" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="44" fill="#FFFFFF" letter-spacing="-0.5">QUANT</text>
+                <text x="163" y="48" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="44" fill="#FFFFFF">I</text>
+                <text x="183" y="48" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="44" fill="#FFFFFF">X</text>
+                
+                <!-- Orange dot above I -->
+                <circle cx="168.5" cy="14" r="6" fill="#F58220" />
+                
+                <!-- Orange Curved Arrow - exact swooping growth arrow style -->
+                <path d="M 148 48 C 176 48 205 40 228 14 L 222 10 L 246 2 L 239 25 L 233 18 C 210 42 179 46 148 48 Z" fill="url(#arrow-grad)" />
+                
+                <defs>
+                    <linearGradient id="arrow-grad" x1="148" y1="48" x2="246" y2="2" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#F58220" />
+                        <stop offset="100%" stop-color="#FFA800" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            <div class="logo-text-group" style="align-self: flex-end; margin-bottom: 2px;">
+                <span class="logo-tag" style="font-size: 8px; opacity: 0.6; border-left: 1px solid rgba(255,255,255,0.15); padding-left: 8px; margin-left: 4px;">DIGITAL ACCOUNTING</span>
+            </div>
+        </div>
+
+        <!-- Top Slide Navigation Menu -->
+        <nav class="nav-menu">
+            <span class="nav-item active" onclick="goToSlide(0)">Giới thiệu</span>
+            <span class="nav-item" onclick="goToSlide(1)">Nỗi đau & Giải pháp</span>
+            <span class="nav-item" onclick="goToSlide(2)">Dịch vụ</span>
+            <span class="nav-item" onclick="goToSlide(3)">Lợi thế</span>
+            <span class="nav-item" onclick="goToSlide(4)">Thị trường</span>
+            <span class="nav-item" onclick="goToSlide(5)">Chiến lược</span>
+            <span class="nav-item" onclick="goToSlide(6)">Vận hành</span>
+            <span class="nav-item" onclick="goToSlide(7)">Lộ trình</span>
+            <span class="nav-item" onclick="goToSlide(8)">Tài chính</span>
+        </nav>
+
+        <div class="header-menu">
+            <span class="slide-indicator">Slide <span id="current-slide-num">1</span> / 9</span>
+        </div>
+    </header>
+
+    <!-- Slide Container -->
+    <main class="deck-container">
+        <!-- Slide 1: Hero & GIỚI THIỆU CHUNG -->
+        <section class="slide active" id="slide-1">
+            <div class="slide-content hero-slide">
+                <div class="hero-left">
+                    <h1 class="hero-title">QUANTIX<br><span class="gradient-text">Kế Toán Số</span> Thế Hệ Mới</h1>
+                    <p class="hero-lead">
+                        Giải pháp đột phá kết hợp sức mạnh của <strong>Trí tuệ nhân tạo (AI)</strong> và 
+                        chuyên môn thực chiến từ đội ngũ <strong>cố vấn phòng thanh tra thuế</strong>.
+                    </p>
+                    <div class="hero-features">
+                        <div class="h-feat-item animate-fade-in" style="animation-delay: 0.2s;">
+                            <span class="h-feat-icon">🛡️</span>
+                            <div>
+                                <h4>An Tâm Tuyệt Đối</h4>
+                                <p>Sử dụng góc nhìn của thanh tra thuế để bảo vệ doanh nghiệp</p>
+                            </div>
+                        </div>
+                        <div class="h-feat-item animate-fade-in" style="animation-delay: 0.4s;">
+                            <span class="h-feat-icon">🌐</span>
+                            <div>
+                                <h4>Minh Bạch Hoàn Toàn</h4>
+                                <p>Dữ liệu số hóa đám mây 24/7 trên nền tảng MISA ASP</p>
+                            </div>
+                        </div>
+                        <div class="h-feat-item animate-fade-in" style="animation-delay: 0.6s;">
+                            <span class="h-feat-icon">⚡</span>
+                            <div>
+                                <h4>Tối Ưu Năng Suất</h4>
+                                <p>Tận dụng AI nhằm tối đa hóa năng suất lao động, giảm thiểu 40% - 60% thời gian nhập liệu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-card glass-panel">
+                        <div class="card-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                            <span class="window-title">Quantix_AI_Engine.exe</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="terminal-line"><span class="t-blue">Quantix $</span> init accounting-system</div>
+                            <div class="terminal-line"><span class="t-green">✔</span> Connected to MISA ASP Cloud API</div>
+                            <div class="terminal-line"><span class="t-green">✔</span> OCR Engine loaded (Success)</div>
+                            <div class="terminal-line"><span class="t-blue">Quantix $</span> run scanning-invoice --batch=0826</div>
+                            <div class="terminal-line"><span class="t-yellow">Processing:</span> 128 hóa đơn đầu vào...</div>
+                            <div class="terminal-line"><span class="t-green">✔</span> Trích xuất dữ liệu hoàn thành (Sai lệch: 0%)</div>
+                            <div class="terminal-line"><span class="t-green">✔</span> Tiết kiệm: <span class="badge-accent">55% thời gian</span> nhập liệu</div>
+                            <div class="terminal-pulse"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2: NỖI ĐAU THỊ TRƯỜNG & GIẢI PHÁP -->
+        <section class="slide" id="slide-2">
+            <div class="slide-content">
+                <h2 class="slide-title">Nỗi Đau Thị Trường & Giải Pháp</h2>
+                <p class="slide-subtitle">Sự bế tắc của mô hình cũ tạo ra cơ hội đột phá cho mô hình Kế toán số</p>
+                
+                <div class="split-view">
+                    <!-- Column 1: Client Pain points -->
+                    <div class="glass-panel pane-item">
+                        <div class="pane-header red-border">
+                            <h3>Nỗi đau của Doanh nghiệp SME</h3>
+                        </div>
+                        <div class="pane-body">
+                            <ul class="list-styled">
+                                <li>
+                                    <strong>Hệ thống luật thuế phức tạp:</strong> Thay đổi liên tục khiến chủ doanh nghiệp và kế toán ít kinh nghiệm rơi vào hoang mang, nguy cơ phạt nặng khi thanh tra.
+                                </li>
+                                <li>
+                                    <strong>Rà soát bằng AI/Dữ liệu lớn:</strong> Cơ quan thuế siết chặt quản lý bằng công nghệ cao, phát hiện sai sót tự động khiến rủi ro thuế tăng vọt.
+                                </li>
+                                <li>
+                                    <strong>Số liệu mù mờ, bị "giam lỏng":</strong> Các bên làm dịch vụ truyền thống giữ sổ sách sơ sài, không minh bạch, không bàn giao khi chấm dứt hợp đồng.
+                                </li>
+                            </ul>
+                            <div class="quantix-solution-box emerald-bg animate-pulse">
+                                <strong>💡 Giải pháp Quantix:</strong> Sử dụng nền tảng <strong>MISA ASP</strong> đám mây, giúp chủ doanh nghiệp tự truy cập, kiểm tra dữ liệu mọi lúc mọi nơi, xóa bỏ hoàn toàn sự mù mờ.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Accounting Agency pain points -->
+                    <div class="glass-panel pane-item">
+                        <div class="pane-header yellow-border">
+                            <h3>Nỗi đau của Đơn vị Kế toán cũ</h3>
+                        </div>
+                        <div class="pane-body">
+                            <ul class="list-styled">
+                                <li>
+                                    <strong>Hạch toán thủ công quá nhiều:</strong> Tiêu tốn hàng giờ nhập liệu thủ công lặp đi lặp lại khiến nhân sự quá tải và thường xuyên mắc lỗi.
+                                </li>
+                                <li>
+                                    <strong>Biên lợi nhuận cực kỳ mỏng:</strong> Tốn quá nhiều nhân lực ghi sổ dẫn đến chi phí vận hành cao, không thể mở rộng quy mô.
+                                </li>
+                                <li>
+                                    <strong>Không có thời gian tư vấn:</strong> Nhân viên ngập trong OT không thể chăm sóc khách hàng hay đưa ra tư vấn giá trị gia tăng.
+                                </li>
+                            </ul>
+                            <div class="quantix-solution-box cyan-bg animate-pulse">
+                                <strong>⚡ Giải pháp Quantix:</strong> Phát triển công cụ tự động hóa và AI, cắt giảm <strong>40% - 60% thời gian</strong> nhập liệu, tối ưu hóa năng suất và loại bỏ áp lực OT.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: HỆ SINH THÁI SẢN PHẨM & DỊCH VỤ -->
+        <section class="slide" id="slide-3">
+            <div class="slide-content">
+                <h2 class="slide-title">Hệ Sinh Thế Sản Phẩm & Dịch Vụ</h2>
+                <p class="slide-subtitle">Chuỗi giá trị toàn diện giải quyết triệt để nhu cầu tài chính - thuế của doanh nghiệp (Bấm thẻ để xem chi tiết)</p>
+                
+                <div class="grid-4">
+                    <!-- Service 1 -->
+                    <div class="service-card glass-panel" onclick="toggleServiceDetail(1)">
+                        <div class="service-icon">📊</div>
+                        <h3>A. Dịch Vụ Định Kỳ</h3>
+                        <p class="service-summary">Hạch toán, kê khai thuế, bảo hiểm, pháp lý doanh nghiệp định kỳ trọn gói.</p>
+                        <div class="service-details" id="srv-detail-1">
+                            <div class="divider"></div>
+                            <p><strong>Khác biệt công nghệ:</strong> Tích hợp 100% qua nền tảng cloud MISA ASP, kết hợp các công cụ phần mềm tự phát triển nhằm tăng độ chính xác và tốc độ gửi số liệu cho khách hàng. Khách hàng có quyền giám sát tối cao sổ sách của mình mà không sợ bị dịch vụ "giam lỏng".</p>
+                            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px;">
+                                <span class="tag-service">MISA ASP Cloud</span>
+                                <span class="tag-service" style="background: rgba(245, 130, 32, 0.15); color: #F58220; border-color: rgba(245, 130, 32, 0.35);">Phần mềm tự phát triển</span>
+                            </div>
+                        </div>
+                        <span class="click-more">Bấm để xem chi tiết →</span>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card glass-panel" onclick="toggleServiceDetail(2)">
+                        <div class="service-icon">🛡️</div>
+                        <h3>B. Tư Vấn Cao Cấp</h3>
+                        <p class="service-summary">Rà soát sổ sách cũ, tổ chức bộ máy kế toán nội bộ, giải quyết tranh chấp thuế.</p>
+                        <div class="service-details" id="srv-detail-2">
+                            <div class="divider"></div>
+                            <p><strong>Điểm độc quyền:</strong> Các phương án giải quyết rủi ro được xây dựng trực tiếp dưới góc nhìn của chuyên gia công tác tại phòng thanh tra thuế.</p>
+                            <span class="tag-service">Mảng biên lợi nhuận cao nhất</span>
+                        </div>
+                        <span class="click-more">Bấm để xem chi tiết →</span>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card glass-panel" onclick="toggleServiceDetail(3)">
+                        <div class="service-icon">🎓</div>
+                        <h3>C. Mảng Đào Tạo</h3>
+                        <p class="service-summary">Huấn luyện kế toán viên nội bộ và đào tạo đọc hiểu báo cáo cho CEO/Chủ doanh nghiệp.</p>
+                        <div class="service-details" id="srv-detail-3">
+                            <div class="divider"></div>
+                            <p><strong>Mục tiêu:</strong> Giải quyết bài toán thiếu hụt nhân sự chất lượng. Giúp chủ doanh nghiệp không có chuyên môn vẫn "đọc vị" được số liệu tài chính để đưa ra quyết định.</p>
+                            <span class="tag-service">Đào tạo Thực chiến</span>
+                        </div>
+                        <span class="click-more">Bấm để xem chi tiết →</span>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card glass-panel" onclick="toggleServiceDetail(4)">
+                        <div class="service-icon">🌐</div>
+                        <h3>D. Nền Tảng Q&A</h3>
+                        <p class="service-summary">Kết nối ẩn danh giữa doanh nghiệp và chuyên gia/cán bộ thuế để giải đáp vướng mắc.</p>
+                        <div class="service-details" id="srv-detail-4">
+                            <div class="divider"></div>
+                            <p><strong>Kiểm soát rủi ro:</strong> Đang ở dạng ý tưởng (Concept). Tạm dừng viết mã để tập trung tham vấn pháp lý nhằm tránh xung đột quy định pháp luật hoặc đạo đức công vụ.</p>
+                            <span class="tag-service">Dự án Tương lai (Concept)</span>
+                        </div>
+                        <span class="click-more">Bấm để xem chi tiết →</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: LỢI THẾ CẠNH TRANH CỐT LÕI (USP) -->
+        <section class="slide" id="slide-4">
+            <div class="slide-content">
+                <h2 class="slide-title">Lợi Thế Cạnh Tranh Cốt Lõi</h2>
+                <p class="slide-subtitle">Ba cột trụ vững chắc tạo nên rào cản ngăn đối thủ sao chép</p>
+                
+                <div class="columns-3">
+                    <div class="usp-card glass-panel">
+                        <div class="usp-badge">Trụ Cột 1</div>
+                        <div class="usp-icon">👨‍⚖️</div>
+                        <h3>Chuyên môn đặc thù</h3>
+                        <p>
+                            Khách hàng được bảo vệ bởi mạng lưới kiến thức từ phòng thanh tra thuế. 
+                            Các phương án xử lý rủi ro được tư vấn thực tế, chuẩn xác và an toàn nhất dưới góc nhìn của cán bộ thuế.
+                        </p>
+                    </div>
+
+                    <div class="usp-card glass-panel">
+                        <div class="usp-badge">Trụ Cột 2</div>
+                        <div class="usp-icon">☁️</div>
+                        <h3>Minh bạch dữ liệu</h3>
+                        <p>
+                            Ứng dụng nền tảng <strong>MISA ASP</strong> trao lại toàn quyền kiểm soát số liệu cho khách hàng. 
+                            Chủ doanh nghiệp có quyền truy cập đám mây 24/7 để theo dõi dữ liệu của chính họ.
+                        </p>
+                    </div>
+
+                    <div class="usp-card glass-panel">
+                        <div class="usp-badge">Trụ Cột 3</div>
+                        <div class="usp-icon">🤖</div>
+                        <h3>Năng suất & Thời gian</h3>
+                        <p>
+                            Công cụ tự động hóa và AI giúp cắt giảm từ 40% đến 60% thời gian nhập liệu thủ công. 
+                            Nhân viên không bị áp lực OT, dồn toàn bộ nguồn lực con người cho chăm sóc và tư vấn chuyên sâu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: THỊ TRƯỜNG & KHÁCH HÀNG MỤC TIÊU -->
+        <section class="slide" id="slide-5">
+            <div class="slide-content">
+                <h2 class="slide-title">Thị Trường & Khách Hàng Mục Tiêu</h2>
+                <p class="slide-subtitle">Chiến lược tập trung phân khúc giá trị cao tại thị trường TP. Hồ Chí Minh</p>
+                
+                <div class="split-view">
+                    <div class="glass-panel pane-item">
+                        <h3>Bộ Lọc Khách Hàng Nghiêm Ngặt</h3>
+                        <p>Quantix kiên quyết thực hiện bộ lọc để đảm bảo sự đồng bộ trong tư duy minh bạch tài chính:</p>
+                        <div class="client-filter-box">
+                            <div class="filter-item reject">
+                                <span class="f-icon">❌ Kiên quyết từ chối</span>
+                                <p>Các doanh nghiệp có rủi ro pháp lý cao, hoạt động mờ ám, hoặc chủ doanh nghiệp không quan tâm tính chính xác của sổ sách.</p>
+                            </div>
+                            <div class="filter-item accept">
+                                <span class="f-icon">🟢 Tập trung phục vụ</span>
+                                <p>SME có hoạt động kinh doanh rõ ràng, sẵn sàng chi trả mức phí cao để đổi lấy dịch vụ "may đo" cao cấp và an tâm tuyệt đối.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-panel pane-item">
+                        <h3>Quy Mô & Xu Hướng Thị Trường</h3>
+                        <div class="market-stats">
+                            <div class="stat-box">
+                                <span class="stat-number">CAGR 6.74% - 7.1%</span>
+                                <span class="stat-label">Tốc độ tăng trưởng dịch vụ kế toán SME toàn cầu</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">AI & Dữ liệu lớn</span>
+                                <span class="stat-label">Cơ quan thuế siết chặt quản lý, quét tự động hóa hóa đơn rủi ro</span>
+                            </div>
+                        </div>
+                        <p class="market-desc">
+                            <strong>Cơ hội tăng trưởng:</strong> Do doanh nghiệp SME ngày càng thấy được tính hiệu quả kinh tế 
+                            vượt trội khi sử dụng dịch vụ thuê ngoài so với việc phải duy trì một bộ máy kế toán nội bộ cồng kềnh, đắt đỏ.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: CHIẾN LƯỢC GIA NHẬP THỊ TRƯỜNG -->
+        <section class="slide" id="slide-6">
+            <div class="slide-content">
+                <h2 class="slide-title">Chiến Lược Gia Nhập Thị Trường</h2>
+                <p class="slide-subtitle">Mô hình định giá dựa trên giá trị và các kênh tiếp cận xây dựng niềm tin</p>
+                
+                <div class="split-view">
+                    <div class="glass-panel pane-item">
+                        <h3>Định Giá Dựa Trên Giá Trị (Value-Based Pricing)</h3>
+                        <p>
+                            Quantix cạnh tranh bằng Giá trị (Value-based competition), định vị phân khúc cao cấp. 
+                            Chúng tôi không bán "nhập liệu", chúng tôi bán "sự an tâm tuyệt đối".
+                        </p>
+                        <div class="pricing-badge-wrapper">
+                            <div class="price-card">
+                                <h4>Dịch vụ định kỳ</h4>
+                                <span class="price-val">400.000đ / giờ</span>
+                                <p>Ước tính thời gian thực hiện để tính giá</p>
+                            </div>
+                            <div class="price-card focus">
+                                <h4>Tư vấn chuyên sâu</h4>
+                                <span class="price-val">Từ 2.000.000đ / giờ</span>
+                                <p>Dựa theo mức độ phức tạp của từng vụ việc</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel pane-item">
+                        <h3>Chiến Lược Tiếp Cận (Kênh Marketing Chuyên Sâu)</h3>
+                        <div class="aida-funnel">
+                            <div class="funnel-step">
+                                <span class="step-lbl">Tổ chức Hội thảo (Seminars)</span>
+                                <p>Hội thảo cập nhật luật thuế và quản trị rủi ro dòng tiền để tiếp cận giới chủ SME.</p>
+                            </div>
+                            <div class="funnel-step">
+                                <span class="step-lbl">Mạng lưới đối tác bổ trợ</span>
+                                <p>Hợp tác giới thiệu chéo với văn phòng luật, đơn vị thành lập doanh nghiệp, đối tác phần mềm.</p>
+                            </div>
+                            <div class="funnel-step">
+                                <span class="step-lbl">Tiếp thị thông qua cán bộ thuế</span>
+                                <p>Chính sách hoa hồng tiếp thị 15% trên doanh thu thực tế được hạch toán vào nhóm Chi phí biến đổi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: VẬN HÀNH & BỘ MÁY TỔ CHỨC -->
+        <section class="slide" id="slide-7">
+            <div class="slide-content">
+                <h2 class="slide-title">Mô Hình Vận Hành & Tổ Chức</h2>
+                <p class="slide-subtitle">Vận hành tối ưu chi phí cố định và quy trình gác cổng chất lượng nghiêm ngặt</p>
+                
+                <div class="org-chart-full-view">
+                    <!-- Left: Org chart -->
+                    <div class="glass-panel pane-item full-width-org" style="display: flex; flex-direction: column; justify-content: space-between; width: 100%; max-width: 900px; margin: 0 auto; padding: 24px; position: relative;">
+                        <div>
+                            <h3 style="margin-bottom: 6px; text-align: center;">Sơ Đồ Bộ Máy Chuyên Môn Hóa</h3>
+                            <p style="font-size: 11px; color: var(--text-muted); margin-bottom: 24px; text-align: center;">Nhấn vào từng bộ phận để xem chi tiết vai trò, nhiệm vụ</p>
+                            
+                            <div class="org-chart-tree" style="position: relative; width: 100%; padding: 10px 0;">
+                                <!-- SVG Canvas for drawing connected lines -->
+                                <svg id="org-svg-lines" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0;"></svg>
+
+                                <!-- Level 1: CEO -->
+                                <div class="org-row row-top" style="position: relative; z-index: 1;">
+                                    <div class="org-card leader" onclick="showDeptDetails('ceo')">
+                                        <div class="card-icon">👑</div>
+                                        <h4>Giám Đốc</h4>
+                                        <p>Điều hành & Chiến lược</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Spacer instead of trunk line (SVG draws lines) -->
+                                <div style="height: 28px;"></div>
+
+                                <!-- Level 2: Supporting (HR & QA) -->
+                                <div class="org-row row-middle" style="position: relative; z-index: 1; justify-content: space-between; width: 100%; max-width: 580px; margin: 0 auto;">
+                                    <div class="org-card support" onclick="showDeptDetails('hr')">
+                                        <div class="card-icon">👥</div>
+                                        <h5>Phòng Nhân Sự</h5>
+                                        <p>Đào tạo, nhân sự, đãi ngộ</p>
+                                    </div>
+                                    <div class="org-card support qa" onclick="showDeptDetails('qa')">
+                                        <div class="card-icon">🛡️</div>
+                                        <h5>Kiểm Soát Nội Bộ</h5>
+                                        <p>Định kỳ bóc mẫu, kiểm tra</p>
+                                    </div>
+                                </div>
+
+                                <!-- Spacer -->
+                                <div style="height: 84px;"></div>
+
+                                <!-- Level 3: Core Operations (3 columns) -->
+                                <div class="org-row row-bottom" style="position: relative; z-index: 1;">
+                                    <div class="org-card core" onclick="showDeptDetails('accounting')">
+                                        <div class="card-icon">📊</div>
+                                        <h5>Kế Toán - Thuế</h5>
+                                        <p>Trưởng nhóm & Kế toán viên</p>
+                                    </div>
+                                    <div class="org-card core" onclick="showDeptDetails('legal')">
+                                        <div class="card-icon">⚖️</div>
+                                        <h5>BHXH & Pháp Lý</h5>
+                                        <p>Thủ tục BHXH, ĐKKD</p>
+                                    </div>
+                                    <div class="org-card core" onclick="showDeptDetails('admin')">
+                                        <div class="card-icon">✉️</div>
+                                        <h5>Phòng Admin</h5>
+                                        <p>Phản ánh, hỗ trợ, công nợ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Detail Panel -->
+                        <div class="dept-details-display glass-panel" id="dept-details-display" style="margin: 20px auto 0 auto; min-height: 95px; width: 100%; max-width: 800px; padding: 12px 20px; display: flex; align-items: center; justify-content: center; text-align: left; border: 1px solid rgba(0, 242, 254, 0.1); background: rgba(5, 8, 15, 0.4);">
+                            <div class="details-placeholder" id="dept-placeholder" style="width: 100%;">
+                                <p style="font-size: 11.5px; color: var(--text-muted); text-align: center; margin: 0; line-height: 1.5;">💡 <strong>Hãy click vào một phòng ban</strong> trong sơ đồ để xem vai trò và nhiệm vụ chi tiết của phòng ban đó.</p>
+                            </div>
+                            <div class="details-content" id="dept-content" style="display: none; width: 100%;">
+                                <h4 id="dept-title" style="font-size: 13.5px; font-weight: 700; color: var(--primary); margin: 0 0 6px 0; display: flex; align-items: center; gap: 8px;">
+                                    <span id="dept-icon">📊</span> <span id="dept-name-text">Tên phòng ban</span>
+                                </h4>
+                                <p id="dept-desc-text" style="font-size: 12px; color: var(--text-muted); line-height: 1.6; margin: 0;">Mô tả nhiệm vụ.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8: LỘ TRÌNH PHÁT TRIỂN & MỞ RỘNG -->
+        <section class="slide" id="slide-8">
+            <div class="slide-content">
+                <h2 class="slide-title">Lộ Trình Phát Triển & Mở Rộng</h2>
+                <p class="slide-subtitle">Chiến lược tối ưu hóa nhân sự ban đầu và kế hoạch nâng cấp hạ tầng theo cột mốc doanh thu</p>
+                
+                <!-- Timeline Container -->
+                <div class="roadmap-timeline two-phases" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; width: 100%; max-width: 900px; margin: 30px auto 0 auto;">
+                    <!-- Phase 1: Lean operation -->
+                    <div class="timeline-phase animate-fade-in" style="animation-delay: 0.1s;">
+                        <div class="phase-number" style="background: rgba(0, 242, 254, 0.15); color: var(--primary); border: 1px solid rgba(0, 242, 254, 0.3);">GIAI ĐOẠN 1</div>
+                        <div class="phase-title" style="font-size: 16px; font-weight: 700; color: #ffffff; margin-top: 4px; margin-bottom: 8px;">Vận Hành Tinh Gọn (Ban Đầu)</div>
+                        <div class="phase-body glass-panel" style="padding: 24px; min-height: 250px; background: rgba(5, 8, 15, 0.3);">
+                            <div style="font-weight: 600; color: var(--primary); margin-bottom: 16px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
+                                👥 ĐỘI NGŨ NÒNG CỐT (3 NHÂN SỰ)
+                            </div>
+                            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px;">
+                                <li style="position: relative; padding-left: 20px; font-size: 12.5px; line-height: 1.5; color: var(--text-muted);">
+                                    <span style="position: absolute; left: 0; color: var(--primary); font-size: 16px; top: -2px;">•</span>
+                                    <strong>1 Giám đốc (CEO):</strong> Điều hành chiến lược, phát triển khách hàng, quản lý IT và nghiên cứu tích hợp công cụ AI tăng năng suất lao động.
+                                </li>
+                                <li style="position: relative; padding-left: 20px; font-size: 12.5px; line-height: 1.5; color: var(--text-muted);">
+                                    <span style="position: absolute; left: 0; color: var(--primary); font-size: 16px; top: -2px;">•</span>
+                                    <strong>1 Kế toán viên:</strong> Phụ trách nhập liệu, kiểm tra chứng từ hóa đơn, xử lý sổ sách định kỳ và lập các báo cáo thuế cho khách hàng.
+                                </li>
+                                <li style="position: relative; padding-left: 20px; font-size: 12.5px; line-height: 1.5; color: var(--text-muted);">
+                                    <span style="position: absolute; left: 0; color: var(--primary); font-size: 16px; top: -2px;">•</span>
+                                    <strong>1 Chuyên viên BHXH & Pháp lý:</strong> Phụ trách thực hiện toàn bộ thủ tục liên quan đến bảo hiểm xã hội và đăng ký thành lập doanh nghiệp.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Phase 2: Scaling -->
+                    <div class="timeline-phase animate-fade-in" style="animation-delay: 0.3s;">
+                        <div class="phase-number" style="background: rgba(5, 242, 161, 0.12); color: var(--accent-emerald); border: 1px solid rgba(5, 242, 161, 0.25);">GIAI ĐOẠN 2</div>
+                        <div class="phase-title" style="font-size: 16px; font-weight: 700; color: #ffffff; margin-top: 4px; margin-bottom: 8px;">Mở Rộng Quy Mô (Doanh Thu > 100 Triệu/Tháng)</div>
+                        <div class="phase-body glass-panel" style="padding: 24px; min-height: 250px; background: rgba(5, 8, 15, 0.3);">
+                            <div style="font-weight: 600; color: var(--accent-emerald); margin-bottom: 16px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
+                                🚀 HẠ TẦNG & NHÂN SỰ MỚI
+                            </div>
+                            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px;">
+                                <li style="position: relative; padding-left: 20px; font-size: 12.5px; line-height: 1.5; color: var(--text-muted);">
+                                    <span style="position: absolute; left: 0; color: var(--accent-emerald); font-size: 16px; top: -2px;">•</span>
+                                    <strong>Cải tạo văn phòng:</strong> Tiến hành sửa chữa, thiết kế lại mặt bằng 50m2 sẵn có làm văn phòng giao dịch và nơi làm việc chuyên nghiệp của toàn đội ngũ.
+                                </li>
+                                <li style="position: relative; padding-left: 20px; font-size: 12.5px; line-height: 1.5; color: var(--text-muted);">
+                                    <span style="position: absolute; left: 0; color: var(--accent-emerald); font-size: 16px; top: -2px;">•</span>
+                                    <strong>Tuyển thêm nhân viên:</strong> Đào tạo và bổ sung thêm các kế toán viên trẻ hỗ trợ nhập liệu, giúp Trưởng nhóm tập trung kiểm soát chất lượng sổ sách.
+                                </li>
+                                <li style="position: relative; padding-left: 20px; font-size: 12.5px; line-height: 1.5; color: var(--text-muted);">
+                                    <span style="position: absolute; left: 0; color: var(--accent-emerald); font-size: 16px; top: -2px;">•</span>
+                                    <strong>Tối ưu hóa công suất:</strong> Tiếp tục cải tiến phần mềm tự làm và các công cụ AI để duy trì chi phí cố định thấp và chất lượng dịch vụ đồng đều.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 9: DỰ PHÓNG TÀI CHÍNH TƯƠNG TÁC -->
+        <section class="slide" id="slide-9">
+            <div class="slide-content financial-slide">
+                <h2 class="slide-title">Dự Phóng Tài Chính & Công Cụ Cổ Đông</h2>
+                <p class="slide-subtitle">Giả lập các tham số tài chính theo mô hình kinh doanh của Quantix (Kéo thanh trượt để thử nghiệm)</p>
+                
+                <div class="financial-container">
+                    <!-- Left: Control Sliders -->
+                    <div class="fin-controls glass-panel" style="padding-right: 16px;">
+                        <h3 style="margin-bottom: 8px;">Tham số giả định</h3>
+                        
+                        <div class="fin-controls-grid">
+                            <!-- Column 1: Revenue & Rent -->
+                            <div class="fin-controls-col">
+                                <!-- Revenue Section -->
+                                <div style="font-weight: 700; font-size: 11.5px; color: var(--primary); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; border-left: 2.5px solid var(--primary); padding-left: 8px; margin-bottom: 4px;">
+                                    📈 Doanh Thu Dự Kiến
+                                </div>
+
+                                <div class="slider-group">
+                                    <div class="slider-info">
+                                        <label for="client-count">Số lượng khách hàng định kỳ (SME)</label>
+                                        <span class="slider-val" id="val-client-count">80</span>
+                                    </div>
+                                    <input type="range" id="client-count" min="10" max="150" value="80" step="5">
+                                </div>
+
+                                <div class="slider-group">
+                                    <div class="slider-info">
+                                        <label for="monthly-fee">Phí dịch vụ định kỳ/tháng (VND)</label>
+                                        <span class="slider-val" id="val-monthly-fee">3,000,000</span>
+                                    </div>
+                                    <input type="range" id="monthly-fee" min="1000000" max="8000000" value="3000000" step="250000">
+                                </div>
+
+                                <div class="slider-group">
+                                    <div class="slider-info">
+                                        <label for="consulting-rev">Doanh thu dịch vụ cao cấp phát sinh ngoài (Năm)</label>
+                                        <span class="slider-val" id="val-consulting-rev">1,120,000,000</span>
+                                    </div>
+                                    <input type="range" id="consulting-rev" min="100000000" max="2500000000" value="1120000000" step="50000000">
+                                </div>
+
+                                <!-- Rent & Other Costs Section -->
+                                <div style="font-weight: 700; font-size: 11.5px; color: var(--warning); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 14px; border-left: 2.5px solid var(--warning); padding-left: 8px; margin-bottom: 4px;">
+                                    🏠 Chi Phí Mặt Bằng & Quản Lý
+                                </div>
+
+                                <div class="slider-group">
+                                    <div class="slider-info">
+                                        <label for="rent-cost">Chi phí mặt bằng/tháng (VND)</label>
+                                        <span class="slider-val" id="val-rent-cost">10 triệu</span>
+                                    </div>
+                                    <input type="range" id="rent-cost" min="0" max="50000000" value="10000000" step="1000000">
+                                </div>
+
+                                <div class="slider-group">
+                                    <div class="slider-info">
+                                        <label for="admin-percent">Chi phí quản lý khác (% trên tổng chi phí trên)</label>
+                                        <span class="slider-val" id="val-admin-percent">10 %</span>
+                                    </div>
+                                    <input type="range" id="admin-percent" min="0" max="40" value="10" step="1">
+                                </div>
+                            </div>
+
+                            <!-- Column 2: Personnel & Salaries -->
+                            <div class="fin-controls-col">
+                                <!-- Personnel & Salaries Section -->
+                                <div style="font-weight: 700; font-size: 11.5px; color: var(--accent-emerald); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; border-left: 2.5px solid var(--accent-emerald); padding-left: 8px; margin-bottom: 4px;">
+                                    👥 Đội ngũ Nhân sự & Lương tháng
+                                </div>
+
+                                <!-- 1. Trưởng nhóm kế toán -->
+                                <div class="staff-control-row">
+                                    <div class="staff-role-info">
+                                        <span class="staff-icon">👑</span>
+                                        <span class="staff-name">Trưởng nhóm kế toán</span>
+                                    </div>
+                                    <div class="staff-inputs">
+                                        <div class="staff-count-group">
+                                            <span style="font-size: 10px; color: var(--text-muted); margin-right: 4px;">SL:</span>
+                                            <div class="stepper-container">
+                                                <button type="button" class="stepper-btn decrement" onclick="adjustStepper('count-leader', -1)">−</button>
+                                                <input type="number" class="staff-count-input" id="count-leader" min="0" max="15" value="2" readonly>
+                                                <button type="button" class="stepper-btn increment" onclick="adjustStepper('count-leader', 1)">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="staff-salary-group">
+                                            <div class="staff-salary-label-row">
+                                                <span>Lương tháng/người:</span>
+                                                <span class="staff-salary-val" id="val-salary-leader">18 triệu</span>
+                                            </div>
+                                            <input type="range" class="staff-salary-slider" id="salary-leader" min="5000000" max="40000000" value="18000000" step="1000000">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 2. Kế toán viên -->
+                                <div class="staff-control-row">
+                                    <div class="staff-role-info">
+                                        <span class="staff-icon">📊</span>
+                                        <span class="staff-name">Kế toán viên</span>
+                                    </div>
+                                    <div class="staff-inputs">
+                                        <div class="staff-count-group">
+                                            <span style="font-size: 10px; color: var(--text-muted); margin-right: 4px;">SL:</span>
+                                            <div class="stepper-container">
+                                                <button type="button" class="stepper-btn decrement" onclick="adjustStepper('count-accountant', -1)">−</button>
+                                                <input type="number" class="staff-count-input" id="count-accountant" min="0" max="30" value="6" readonly>
+                                                <button type="button" class="stepper-btn increment" onclick="adjustStepper('count-accountant', 1)">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="staff-salary-group">
+                                            <div class="staff-salary-label-row">
+                                                <span>Lương tháng/người:</span>
+                                                <span class="staff-salary-val" id="val-salary-accountant">10 triệu</span>
+                                            </div>
+                                            <input type="range" class="staff-salary-slider" id="salary-accountant" min="5000000" max="30000000" value="10000000" step="1000000">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 3. Chuyên viên BHXH & Pháp lý -->
+                                <div class="staff-control-row">
+                                    <div class="staff-role-info">
+                                        <span class="staff-icon">⚖️</span>
+                                        <span class="staff-name">Chuyên viên BHXH & Pháp lý</span>
+                                    </div>
+                                    <div class="staff-inputs">
+                                        <div class="staff-count-group">
+                                            <span style="font-size: 10px; color: var(--text-muted); margin-right: 4px;">SL:</span>
+                                            <div class="stepper-container">
+                                                <button type="button" class="stepper-btn decrement" onclick="adjustStepper('count-legal', -1)">−</button>
+                                                <input type="number" class="staff-count-input" id="count-legal" min="0" max="10" value="1" readonly>
+                                                <button type="button" class="stepper-btn increment" onclick="adjustStepper('count-legal', 1)">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="staff-salary-group">
+                                            <div class="staff-salary-label-row">
+                                                <span>Lương tháng/người:</span>
+                                                <span class="staff-salary-val" id="val-salary-legal">12 triệu</span>
+                                            </div>
+                                            <input type="range" class="staff-salary-slider" id="salary-legal" min="5000000" max="30000000" value="12000000" step="1000000">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 4. Nhân viên admin -->
+                                <div class="staff-control-row">
+                                    <div class="staff-role-info">
+                                        <span class="staff-icon">✉️</span>
+                                        <span class="staff-name">Nhân viên Admin</span>
+                                    </div>
+                                    <div class="staff-inputs">
+                                        <div class="staff-count-group">
+                                            <span style="font-size: 10px; color: var(--text-muted); margin-right: 4px;">SL:</span>
+                                            <div class="stepper-container">
+                                                <button type="button" class="stepper-btn decrement" onclick="adjustStepper('count-admin', -1)">−</button>
+                                                <input type="number" class="staff-count-input" id="count-admin" min="0" max="10" value="1" readonly>
+                                                <button type="button" class="stepper-btn increment" onclick="adjustStepper('count-admin', 1)">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="staff-salary-group">
+                                            <div class="staff-salary-label-row">
+                                                <span>Lương tháng/người:</span>
+                                                <span class="staff-salary-val" id="val-salary-admin">8 triệu</span>
+                                            </div>
+                                            <input type="range" class="staff-salary-slider" id="salary-admin" min="5000000" max="25000000" value="8000000" step="1000000">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 5. Nhân viên nhân sự -->
+                                <div class="staff-control-row">
+                                    <div class="staff-role-info">
+                                        <span class="staff-icon">👥</span>
+                                        <span class="staff-name">Chuyên viên Nhân sự</span>
+                                    </div>
+                                    <div class="staff-inputs">
+                                        <div class="staff-count-group">
+                                            <span style="font-size: 10px; color: var(--text-muted); margin-right: 4px;">SL:</span>
+                                            <div class="stepper-container">
+                                                <button type="button" class="stepper-btn decrement" onclick="adjustStepper('count-hr', -1)">−</button>
+                                                <input type="number" class="staff-count-input" id="count-hr" min="0" max="10" value="1" readonly>
+                                                <button type="button" class="stepper-btn increment" onclick="adjustStepper('count-hr', 1)">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="staff-salary-group">
+                                            <div class="staff-salary-label-row">
+                                                <span>Lương tháng/người:</span>
+                                                <span class="staff-salary-val" id="val-salary-hr">12 triệu</span>
+                                            </div>
+                                            <input type="range" class="staff-salary-slider" id="salary-hr" min="5000000" max="30000000" value="12000000" step="1000000">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 6. Nhân viên quản lý nội bộ -->
+                                <div class="staff-control-row">
+                                    <div class="staff-role-info">
+                                        <span class="staff-icon">🛡️</span>
+                                        <span class="staff-name">Kiểm soát nội bộ</span>
+                                    </div>
+                                    <div class="staff-inputs">
+                                        <div class="staff-count-group">
+                                            <span style="font-size: 10px; color: var(--text-muted); margin-right: 4px;">SL:</span>
+                                            <div class="stepper-container">
+                                                <button type="button" class="stepper-btn decrement" onclick="adjustStepper('count-qa', -1)">−</button>
+                                                <input type="number" class="staff-count-input" id="count-qa" min="0" max="10" value="1" readonly>
+                                                <button type="button" class="stepper-btn increment" onclick="adjustStepper('count-qa', 1)">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="staff-salary-group">
+                                            <div class="staff-salary-label-row">
+                                                <span>Lương tháng/người:</span>
+                                                <span class="staff-salary-val" id="val-salary-qa">15 triệu</span>
+                                            </div>
+                                            <input type="range" class="staff-salary-slider" id="salary-qa" min="5000000" max="35000000" value="15000000" step="1000000">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Results & Chart -->
+                    <div class="fin-results glass-panel">
+                        <h3>Kết quả tài chính cả năm</h3>
+                        
+                        <div class="metrics-grid">
+                            <div class="metric-card cyan">
+                                <span class="m-title">TỔNG DOANH THU</span>
+                                <span class="m-value" id="res-total-rev">4,000,000,000 đ</span>
+                            </div>
+                            <div class="metric-card yellow">
+                                <span class="m-title">CHI PHÍ VẬN HÀNH</span>
+                                <span class="m-value" id="res-total-cost">3,163,000,000 đ</span>
+                            </div>
+                            <div class="metric-card emerald">
+                                <span class="m-title">LỢI NHUẬN SAU THUẾ (17%)</span>
+                                <span class="m-value" id="res-net-profit">669,600,000 đ</span>
+                            </div>
+                            <div class="metric-card purple">
+                                <span class="m-title">BIÊN LỢI NHUẬN RÒNG</span>
+                                <span class="m-value" id="res-roi">16.7%</span>
+                            </div>
+                        </div>
+
+                        <div class="chart-container">
+                            <div class="chart-label">Mô hình phân bổ Doanh thu vs Chi phí & Lợi nhuận</div>
+                            <div class="bar-chart-wrapper">
+                                <div class="chart-bar-group">
+                                    <div class="bar-fill rev-bar" id="bar-rev" style="height: 100%;">
+                                        <span class="bar-val" id="bar-val-rev">4.00B</span>
+                                    </div>
+                                    <span class="bar-label">Doanh Thu</span>
+                                </div>
+                                <div class="chart-bar-group">
+                                    <div class="bar-fill cost-bar" id="bar-cost" style="height: 79%;">
+                                        <span class="bar-val" id="bar-val-cost">3.16B</span>
+                                    </div>
+                                    <span class="bar-label">Chi Phí</span>
+                                </div>
+                                <div class="chart-bar-group">
+                                    <div class="bar-fill profit-bar" id="bar-profit" style="height: 17%;">
+                                        <span class="bar-val" id="bar-val-profit">0.67B</span>
+                                    </div>
+                                    <span class="bar-label">LN Sau Thuế</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Slide Deck Navigation Controls -->
+    <div class="deck-controls">
+        <button class="nav-btn prev-btn" id="btn-prev" aria-label="Slide trước">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <div class="nav-dots" id="dots-container">
+            <!-- Populated by JS -->
+        </div>
+        <button class="nav-btn next-btn" id="btn-next" aria-label="Slide sau">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+    </div>
+
+    <!-- Keyboard navigation guide toast -->
+    <div class="keyboard-guide">
+        <span>💡 Dùng phím <b>←</b> hoặc <b>→</b> trên bàn phím để duyệt nhanh</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js?v=3"></script>
+</body>
+</html>
